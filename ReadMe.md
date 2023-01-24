@@ -1,5 +1,5 @@
 # 💫 About Me:
-🔭 I’m looking forward to c++/Unreal Engine and python<br>🤝 I’m looking for help with achieving my goal of learning programming and game dev<br>🌱 I’m currently learning web dev for an excellent start to programming<br>💬 Ask me about my goals and what project I am developing right now
+🔭 I’m looking forward for c++/Unreal Engine and python as well as Web Development<br>🤝 I’m looking for help with achieving my goal of learning programming and game dev<br>🌱 I’m currently learning web dev for an excellent start to programming<br>💬 Ask me about my goals and what project I am developing right now
 
 
 ## 🌐 Socials:
