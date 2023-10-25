@@ -47,3 +47,11 @@ src="https://img.shields.io/twitter/follow/OlkowskiiSzymon?logo=twitter&style=fo
 <li style="display: inline-block; margin-right: 0.25rem;"><a href="https://www.ko-fi.com/szymonolkowski"><img src="https://storage.ko-fi.com/cdn/kofi2.png?v=3" width="150"/></a></li>
 
 </ul>
+
+###
+
+<div align="center">
+  <img src="https://github-read-medium-git-main.pahlevikun.vercel.app/latest?limit=1&username=@szymonolkowski&theme=onedark" alt="Layout with last medium posts"  />
+</div>
+
+###
