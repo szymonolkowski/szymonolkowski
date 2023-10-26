@@ -34,7 +34,7 @@ src="https://img.shields.io/twitter/follow/OlkowskiiSzymon?logo=twitter&style=fo
 
 <b>My GitHub Stats</b>
 
-<a href="http://www.github.com/szymonolkowski"><img src="https://github-readme-stats.vercel.app/api?username=szymonolkowski&show_icons=true&hide=&count_private=true&title_color=f97316&text_color=ffffff&icon_color=f97316&bg_color=171717&hide_border=true&show_icons=true" alt="szymonolkowski's GitHub stats" /></a>
+<a href="http://www.github.com/szymonolkowski"><img height="215px" src="https://github-readme-stats.vercel.app/api?username=szymonolkowski&show_icons=true&hide=&count_private=true&title_color=f97316&text_color=ffffff&icon_color=f97316&bg_color=171717&hide_border=true&show_icons=true" alt="szymonolkowski's GitHub stats" /></a>
 
 <a href="http://www.github.com/szymonolkowski"><img src="https://github-readme-streak-stats.herokuapp.com/?user=szymonolkowski&stroke=ffffff&background=171717&ring=f97316&fire=f97316&currStreakNum=ffffff&currStreakLabel=f97316&sideNums=ffffff&sideLabels=ffffff&dates=ffffff&hide_border=true" /></a>
 
