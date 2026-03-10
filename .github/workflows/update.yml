@@ -37,4 +37,5 @@ jobs:
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
           git add dark_mode.svg light_mode.svg cache/
           git commit -m "Update profile stats" || exit 0
+          git pull --rebase origin main
           git push
