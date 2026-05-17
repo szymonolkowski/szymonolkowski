@@ -240,17 +240,23 @@ def cache_builder(edges, comment_size, force_cache, loc_add=0, loc_del=0):
 
     cache_comment = data[:comment_size] # save the comment block
     data = data[comment_size:] # remove those lines
-    for index in range(len(edges)):
-        repo_hash, commit_count, *__ = data[index].split()
-        if repo_hash == hashlib.sha256(edges[index]['node']['nameWithOwner'].encode('utf-8')).hexdigest():
-            try:
-                if int(commit_count) != edges[index]['node']['defaultBranchRef']['target']['history']['totalCount']:
-                    # if commit count has changed, update loc for that repo
-                    owner, repo_name = edges[index]['node']['nameWithOwner'].split('/')
-                    loc = recursive_loc(owner, repo_name, data, cache_comment)
-                    data[index] = repo_hash + ' ' + str(edges[index]['node']['defaultBranchRef']['target']['history']['totalCount']) + ' ' + str(loc[2]) + ' ' + str(loc[0]) + ' ' + str(loc[1]) + '\n'
-            except TypeError: # If the repo is empty
-                data[index] = repo_hash + ' 0 0 0 0\n'
+    for edge in edges:
+        current_repo_hash = hashlib.sha256(edge['node']['nameWithOwner'].encode('utf-8')).hexdigest()
+        
+        for index in range(len(data)):
+            cached_repo_hash, commit_count, *__ = data[index].split()
+            
+            if cached_repo_hash == current_repo_hash:
+                try:
+                    current_commits = edge['node']['defaultBranchRef']['target']['history']['totalCount']
+                    if int(commit_count) != current_commits:
+                        owner, repo_name = edge['node']['nameWithOwner'].split('/')
+                        loc = recursive_loc(owner, repo_name, data, cache_comment)
+                        data[index] = current_repo_hash + ' ' + str(current_commits) + ' ' + str(loc[2]) + ' ' + str(loc[0]) + ' ' + str(loc[1]) + '\n'
+                except TypeError: 
+                    data[index] = current_repo_hash + ' 0 0 0 0\n'
+                
+                break
     with open(filename, 'w') as f:
         f.writelines(cache_comment)
         f.writelines(data)
