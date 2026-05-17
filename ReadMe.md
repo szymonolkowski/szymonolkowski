@@ -3,3 +3,4 @@
   <source media="(prefers-color-scheme: light)" srcset="light_mode.svg">
   <img alt="GitHub Stats Neofetch" src="dark_mode.svg">
 </picture>
+
